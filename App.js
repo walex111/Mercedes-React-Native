@@ -5,7 +5,12 @@ import CarItem from "./components/CarItems";
 export default function App() {
   return (
     <View style={styles.container}>
-      <CarItem />
+      <CarItem
+        name="Mercedes AMG"
+        tagline="Order Online for"
+        taglineCTA="Touchless Delivery"
+        image={require("./assets/images/mercedes-amg.jpg")}
+      />
       <StatusBar style="auto" />
     </View>
   );
@@ -19,3 +24,4 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
+// Starting at $43,000
